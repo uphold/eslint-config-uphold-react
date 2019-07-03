@@ -65,6 +65,7 @@ module.exports = {
     'react/prefer-es6-class': 'error',
     'react/prefer-stateless-function': 'error',
     'react/react-in-jsx-scope': 'error',
+    'react/require-default-props': 'warn',
     'react/self-closing-comp': 'error',
     'react/sort-prop-types': 'error',
     'react-hooks/rules-of-hooks': 'error',
