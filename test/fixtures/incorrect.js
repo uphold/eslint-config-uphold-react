@@ -1,3 +1,7 @@
+/* eslint-disable prettier/prettier */
+
+const React = null;
+
 // Avoid extra `no-unused-vars` violations.
 function noop() {
   // Do nothing
@@ -15,35 +19,6 @@ const RulesOfHooks = () => {
 };
 
 noop(RulesOfHooks);
-
-// `react/jsx-tag-spacing`.
-const React = null;
-
-const TagSpacingAfterOpening = () => (
-  < div />
-);
-
-noop(TagSpacingAfterOpening);
-
-const TagSpacingBeforeClosing = () => (
-  <div>
-    {'foo'}
-  </div >
-);
-
-noop(TagSpacingBeforeClosing);
-
-const TagSpacingBeforeSelfClosing = () => (
-  <div/>
-);
-
-noop(TagSpacingBeforeSelfClosing);
-
-const TagSpacingClosingSlash = () => (
-  <div/ >
-);
-
-noop(TagSpacingClosingSlash);
 
 // `react/prefer-stateless-function`.
 class PreferStatelessFunction extends React.Component {

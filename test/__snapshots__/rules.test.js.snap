@@ -3,11 +3,6 @@
 exports[`eslint-config-uphold-react should generate violations for incorrect code 1`] = `
 Array [
   "react-hooks/rules-of-hooks",
-  "react/jsx-tag-spacing",
-  "react/jsx-tag-spacing",
-  "react/jsx-tag-spacing",
-  "react/jsx-tag-spacing",
-  "react/jsx-tag-spacing",
   "react/prefer-stateless-function",
 ]
 `;

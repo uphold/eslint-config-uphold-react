@@ -1,4 +1,7 @@
 // `jasmine`, `jest` and `mocha` envs.
+/* eslint-disable prettier/prettier */
+
+const React = null;
 
 // Avoid extra `no-unused-vars` violations.
 function noop() {
@@ -17,7 +20,7 @@ const RulesOfHooks = () => {
 noop(RulesOfHooks);
 
 // `react/jsx-tag-spacing`.
-const React = null;
+
 
 const TagSpacing = () => (
   <div />

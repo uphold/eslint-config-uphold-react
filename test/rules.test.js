@@ -12,7 +12,9 @@ const path = require('path');
  */
 
 describe('eslint-config-uphold-react', () => {
-  const linter = new Linter({ configFile: path.join(__dirname, '..', 'src', 'index.js') });
+  const linter = new Linter({
+    configFile: path.join(__dirname, '..', 'src', 'index.js')
+  });
 
   test('should not generate any violation for correct code', () => {
     const source = path.join(__dirname, 'fixtures', 'correct.js');
@@ -22,7 +24,9 @@ describe('eslint-config-uphold-react', () => {
 
   it('should generate violations for incorrect code', () => {
     const source = path.join(__dirname, 'fixtures', 'incorrect.js');
-    const rules = linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId);
+    const rules = linter
+      .executeOnFiles([source])
+      .results[0].messages.map(violation => violation.ruleId);
 
     expect(rules).toMatchSnapshot();
   });
