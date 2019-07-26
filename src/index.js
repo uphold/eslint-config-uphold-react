@@ -10,37 +10,36 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: [
-    'plugin:react/recommended',
-    'uphold'
-  ],
+  extends: ['plugin:react/recommended', 'uphold'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
       jsx: true
     }
   },
-  plugins: [
-    'import',
-    'react',
-    'react-hooks',
-    'sort-class-members'
-  ],
+  plugins: ['import', 'react', 'react-hooks', 'sort-class-members'],
   root: true,
   rules: {
     'import/default': 'error',
     'import/named': 'error',
     'import/no-unresolved': 'error',
     'jsx-quotes': ['error', 'prefer-double'],
-    'no-extra-parens': ['error', 'all', {
-      ignoreJSX: 'all'
-    }],
+    'no-extra-parens': [
+      'error',
+      'all',
+      {
+        ignoreJSX: 'all'
+      }
+    ],
     'react/display-name': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-closing-bracket-location': 'error',
-    'react/jsx-curly-brace-presence': ['error', {
-      props: 'never'
-    }],
+    'react/jsx-curly-brace-presence': [
+      'error',
+      {
+        props: 'never'
+      }
+    ],
     'react/jsx-curly-spacing': 'error',
     'react/jsx-indent': ['error', 2],
     'react/jsx-indent-props': ['error', 2],
@@ -49,12 +48,15 @@ module.exports = {
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 'error',
-    'react/jsx-tag-spacing': ['error', {
-      afterOpening: 'never',
-      beforeClosing: 'never',
-      beforeSelfClosing: 'always',
-      closingSlash: 'never'
-    }],
+    'react/jsx-tag-spacing': [
+      'error',
+      {
+        afterOpening: 'never',
+        beforeClosing: 'never',
+        beforeSelfClosing: 'always',
+        closingSlash: 'never'
+      }
+    ],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/jsx-wrap-multilines': 'error',
@@ -70,21 +72,24 @@ module.exports = {
     'react/sort-prop-types': 'error',
     'react-hooks/rules-of-hooks': 'error',
     /* eslint-disable sort-keys */
-    'sort-class-members/sort-class-members': ['error', {
-      order: [
-        '[static-properties-alpha]',
-        '[static-methods-alpha]',
-        '[properties-alpha]',
-        '[constructor]',
-        '[methods-alpha]'
-      ],
-      groups: {
-        'static-properties-alpha': [{ type: 'property', static: true, sort: 'alphabetical' }],
-        'static-methods-alpha': [{ type: 'method', static: true, sort: 'alphabetical' }],
-        'properties-alpha': [{ type: 'property', propertyType: 'Literal', sort: 'alphabetical' }],
-        'methods-alpha': [{ type: 'method', sort: 'alphabetical' }]
+    'sort-class-members/sort-class-members': [
+      'error',
+      {
+        order: [
+          '[static-properties-alpha]',
+          '[static-methods-alpha]',
+          '[properties-alpha]',
+          '[constructor]',
+          '[methods-alpha]'
+        ],
+        groups: {
+          'static-properties-alpha': [{ type: 'property', static: true, sort: 'alphabetical' }],
+          'static-methods-alpha': [{ type: 'method', static: true, sort: 'alphabetical' }],
+          'properties-alpha': [{ type: 'property', propertyType: 'Literal', sort: 'alphabetical' }],
+          'methods-alpha': [{ type: 'method', sort: 'alphabetical' }]
+        }
       }
-    }]
+    ]
     /* eslint-enable sort-keys */
   },
   settings: {

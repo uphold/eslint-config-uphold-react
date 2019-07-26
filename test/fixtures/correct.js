@@ -1,4 +1,4 @@
-// `jasmine`, `jest` and `mocha` envs.
+const React = null;
 
 // Avoid extra `no-unused-vars` violations.
 function noop() {
@@ -16,20 +16,11 @@ const RulesOfHooks = () => {
 
 noop(RulesOfHooks);
 
-// `react/jsx-tag-spacing`.
-const React = null;
-
-const TagSpacing = () => (
-  <div />
-);
-
-noop(TagSpacing);
-
 // `react/prefer-stateless-function`.
 class PreferStatelessFunction extends React.Component {
   getFoo = () => {
     return 'foo';
-  }
+  };
 
   render() {
     return this.getFoo();
