@@ -26,3 +26,10 @@ class PreferStatelessFunction extends React.Component {
 }
 
 noop(PreferStatelessFunction);
+
+// React/JSX `prettier` support
+const PrettierReact = () => (
+  < div />
+);
+
+noop(PrettierReact);

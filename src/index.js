@@ -10,7 +10,7 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: ['plugin:react/recommended', 'uphold'],
+  extends: ['uphold', 'plugin:react/recommended', 'prettier/react'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
@@ -24,42 +24,20 @@ module.exports = {
     'import/named': 'error',
     'import/no-unresolved': 'error',
     'jsx-quotes': ['error', 'prefer-double'],
-    'no-extra-parens': [
-      'error',
-      'all',
-      {
-        ignoreJSX: 'all'
-      }
-    ],
     'react/display-name': 'error',
     'react/jsx-boolean-value': 'error',
-    'react/jsx-closing-bracket-location': 'error',
     'react/jsx-curly-brace-presence': [
       'error',
       {
         props: 'never'
       }
     ],
-    'react/jsx-curly-spacing': 'error',
-    'react/jsx-indent': ['error', 2],
-    'react/jsx-indent-props': ['error', 2],
     'react/jsx-key': 'error',
-    'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 'error',
-    'react/jsx-tag-spacing': [
-      'error',
-      {
-        afterOpening: 'never',
-        beforeClosing: 'never',
-        beforeSelfClosing: 'always',
-        closingSlash: 'never'
-      }
-    ],
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
-    'react/jsx-wrap-multilines': 'error',
     'react/no-danger': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-string-refs': 'error',
