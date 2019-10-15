@@ -15,10 +15,7 @@
   "license": "MIT",
   "author": "Uphold",
   "main": "src",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/uphold/eslint-config-uphold-react.git"
-  },
+  "repository": "uphold/eslint-config-uphold-react",
   "scripts": {
     "changelog": "github-changelog-generator --future-release=v$npm_config_future_release > CHANGELOG.md",
     "lint": "eslint --config src/index.js src/index.js test/rules.test.js",
