@@ -24,6 +24,7 @@ module.exports = {
     'import/named': 'error',
     'import/no-unresolved': 'error',
     'jsx-quotes': ['error', 'prefer-double'],
+    'new-cap': ['error', { capIsNewExceptions: ['BigNumber'] }],
     'react/display-name': 'error',
     'react/jsx-boolean-value': 'error',
     'react/jsx-curly-brace-presence': [
