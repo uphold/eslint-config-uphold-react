@@ -33,3 +33,8 @@ noop(PreferStatelessFunction);
 const PrettierReact = () => <div />;
 
 noop(PrettierReact);
+
+// new-cap exception for `Bignumber`
+const BigNumber = () => {};
+
+noop(BigNumber());
