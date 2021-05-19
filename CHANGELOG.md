@@ -1,5 +1,10 @@
 # Changelog
 
+## [v2.0.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v2.0.0) (2021-05-19)
+- Update major dependencies [\#18](https://github.com/uphold/eslint-config-uphold-react/pull/18) ([NelsonBrandao](https://github.com/NelsonBrandao))
+- Add new-cap rule `BigNumber` exception [\#7](https://github.com/uphold/eslint-config-uphold-react/pull/7) ([NelsonBrandao](https://github.com/NelsonBrandao))
+- Update package.json [\#6](https://github.com/uphold/eslint-config-uphold-react/pull/6) ([waldyrious](https://github.com/waldyrious))
+
 ## [v1.0.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v1.0.0) (2019-10-11)
 - Update dependencies [\#5](https://github.com/uphold/eslint-config-uphold-react/pull/5) ([NelsonBrandao](https://github.com/NelsonBrandao))
 - Add license file [\#4](https://github.com/uphold/eslint-config-uphold-react/pull/4) ([NelsonBrandao](https://github.com/NelsonBrandao))
