@@ -34,6 +34,12 @@ module.exports = {
       }
     ],
     'react/jsx-key': 'error',
+    'react/jsx-newline': [
+      'error',
+      {
+        prevent: false
+      }
+    ],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-sort-props': 'error',
