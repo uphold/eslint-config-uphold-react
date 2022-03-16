@@ -36,6 +36,7 @@ module.exports = {
     'react/jsx-key': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
+    'react/jsx-sort-default-props': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
