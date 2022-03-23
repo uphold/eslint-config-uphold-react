@@ -1,5 +1,21 @@
 # Changelog
 
+## [v2.1.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v2.1.0) (2022-03-23)
+- Add 'react/boolean-prop-naming' rule [\#25](https://github.com/uphold/eslint-config-uphold-react/pull/25) ([NelsonBrandao](https://github.com/NelsonBrandao))
+- Add 'react-hooks/exhaustive-deps' rule [\#26](https://github.com/uphold/eslint-config-uphold-react/pull/26) ([NelsonBrandao](https://github.com/NelsonBrandao))
+- Bump handlebars from 4.1.2 to 4.7.7 [\#15](https://github.com/uphold/eslint-config-uphold-react/pull/15) ([dependabot](https://github.com/apps/dependabot))
+- Bump ini from 1.3.5 to 1.3.8 [\#14](https://github.com/uphold/eslint-config-uphold-react/pull/14) ([dependabot](https://github.com/apps/dependabot))
+- Bump acorn from 5.7.3 to 5.7.4 [\#9](https://github.com/uphold/eslint-config-uphold-react/pull/9) ([dependabot](https://github.com/apps/dependabot))
+- Bump lodash from 4.17.11 to 4.17.21 [\#16](https://github.com/uphold/eslint-config-uphold-react/pull/16) ([dependabot](https://github.com/apps/dependabot))
+- Bump hosted-git-info from 2.7.1 to 2.8.9 [\#17](https://github.com/uphold/eslint-config-uphold-react/pull/17) ([dependabot](https://github.com/apps/dependabot))
+- Bump glob-parent from 5.1.0 to 5.1.2 [\#20](https://github.com/uphold/eslint-config-uphold-react/pull/20) ([dependabot](https://github.com/apps/dependabot))
+- Bump path-parse from 1.0.6 to 1.0.7 [\#22](https://github.com/uphold/eslint-config-uphold-react/pull/22) ([dependabot](https://github.com/apps/dependabot))
+- Bump tar from 4.4.10 to 4.4.19 [\#23](https://github.com/uphold/eslint-config-uphold-react/pull/23) ([dependabot](https://github.com/apps/dependabot))
+- Bump tmpl from 1.0.4 to 1.0.5 [\#24](https://github.com/uphold/eslint-config-uphold-react/pull/24) ([dependabot](https://github.com/apps/dependabot))
+- Add 'react/jsx-no-useless-fragment' rule [\#29](https://github.com/uphold/eslint-config-uphold-react/pull/29) ([NelsonBrandao](https://github.com/NelsonBrandao))
+- Add 'react/jsx-newline' rule [\#28](https://github.com/uphold/eslint-config-uphold-react/pull/28) ([NelsonBrandao](https://github.com/NelsonBrandao))
+- Add 'react/jsx-sort-default-props' rule [\#30](https://github.com/uphold/eslint-config-uphold-react/pull/30) ([NelsonBrandao](https://github.com/NelsonBrandao))
+
 ## [v2.0.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v2.0.0) (2021-05-19)
 - Update major dependencies [\#18](https://github.com/uphold/eslint-config-uphold-react/pull/18) ([NelsonBrandao](https://github.com/NelsonBrandao))
 - Add new-cap rule `BigNumber` exception [\#7](https://github.com/uphold/eslint-config-uphold-react/pull/7) ([NelsonBrandao](https://github.com/NelsonBrandao))
