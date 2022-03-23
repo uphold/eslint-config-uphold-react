@@ -42,6 +42,7 @@ module.exports = {
     ],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
+    'react/jsx-no-useless-fragment': 'error',
     'react/jsx-sort-default-props': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'error',
