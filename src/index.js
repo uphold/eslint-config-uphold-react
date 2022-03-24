@@ -63,7 +63,7 @@ module.exports = {
     'react/require-default-props': 'warn',
     'react/self-closing-comp': 'error',
     'react/sort-prop-types': 'error',
-    'react-hooks/exhaustive-deps': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     /* eslint-disable sort-keys */
     'sort-class-members/sort-class-members': [
