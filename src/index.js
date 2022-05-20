@@ -26,7 +26,7 @@ module.exports = {
     'jsx-quotes': ['error', 'prefer-double'],
     'new-cap': ['error', { capIsNewExceptions: ['BigNumber'] }],
     'react/boolean-prop-naming': [
-      'error',
+      'warn',
       {
         rule: '^(has|is|should)[A-Z]([A-Za-z0-9]?)+'
       }
