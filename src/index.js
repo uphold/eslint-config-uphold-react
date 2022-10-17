@@ -10,21 +10,23 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: ['uphold', 'plugin:react/recommended', 'prettier/react'],
-  parser: 'babel-eslint',
+  extends: ['uphold', 'plugin:react/recommended'],
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true
+    babelOptions: {
+      presets: ['@babel/preset-react']
     }
   },
   plugins: ['import', 'react', 'react-hooks', 'sort-class-members'],
   root: true,
   rules: {
+    'array-callback-return': 'off',
     'import/default': 'error',
     'import/named': 'error',
     'import/no-unresolved': 'error',
     'jsx-quotes': ['error', 'prefer-double'],
     'new-cap': ['error', { capIsNewExceptions: ['BigNumber'] }],
+    'promise/prefer-await-to-then': 'off',
     'react/boolean-prop-naming': [
       'warn',
       {
@@ -49,7 +51,6 @@ module.exports = {
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
-    'react/jsx-sort-default-props': 'error',
     'react/jsx-sort-props': 'error',
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
@@ -65,7 +66,7 @@ module.exports = {
     'react/sort-prop-types': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
-    /* eslint-disable sort-keys */
+    /* eslint-disable sort-keys-fix/sort-keys-fix */
     'sort-class-members/sort-class-members': [
       'error',
       {
@@ -84,7 +85,7 @@ module.exports = {
         }
       }
     ]
-    /* eslint-enable sort-keys */
+    /* eslint-enable sort-keys-fix/sort-keys-fix */
   },
   settings: {
     react: {
