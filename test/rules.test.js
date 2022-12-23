@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-const { CLIEngine } = require('eslint');
+const { ESLint } = require('eslint');
 const path = require('path');
 
 /**
@@ -12,19 +12,23 @@ const path = require('path');
  */
 
 describe('eslint-config-uphold-react', () => {
-  const linter = new CLIEngine({
-    configFile: path.join(__dirname, '..', 'src', 'index.js')
+  const linter = new ESLint({
+    ignore: false,
+    overrideConfigFile: path.join(__dirname, '..', 'src', 'index.js')
   });
 
-  test('should not generate any violation for correct code', () => {
+  test('should not generate any violation for correct code', async () => {
     const source = path.join(__dirname, 'fixtures', 'correct.js');
+    const results = await linter.lintFiles([source]);
 
-    expect(linter.executeOnFiles([source]).errorCount).toEqual(0);
+    expect(results[0].errorCount).toEqual(0);
   });
 
-  it('should generate violations for incorrect code', () => {
+  it('should generate violations for incorrect code', async () => {
     const source = path.join(__dirname, 'fixtures', 'incorrect.js');
-    const rules = linter.executeOnFiles([source]).results[0].messages.map(violation => violation.ruleId);
+    const results = await linter.lintFiles([source]);
+
+    const rules = results[0].messages.map(violation => violation.ruleId);
 
     expect(rules).toMatchSnapshot();
   });

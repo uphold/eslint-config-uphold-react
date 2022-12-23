@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`eslint-config-uphold-react should generate violations for incorrect code 1`] = `
-Array [
+[
   "react-hooks/rules-of-hooks",
   "react/prefer-stateless-function",
   "prettier/prettier",
