@@ -30,7 +30,7 @@ module.exports = {
     'react/boolean-prop-naming': [
       'warn',
       {
-        rule: '^(has|is|should)[A-Z]([A-Za-z0-9]?)+'
+        rule: 'autoFocus|^(has|is|should|can)[A-Z]([A-Za-z0-9]?)+'
       }
     ],
     'react/display-name': 'error',
@@ -42,12 +42,6 @@ module.exports = {
       }
     ],
     'react/jsx-key': 'error',
-    'react/jsx-newline': [
-      'error',
-      {
-        prevent: false
-      }
-    ],
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-no-useless-fragment': 'error',
