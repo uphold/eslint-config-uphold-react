@@ -30,7 +30,7 @@ module.exports = {
     'react/boolean-prop-naming': [
       'warn',
       {
-        rule: '^(has|is|should)[A-Z]([A-Za-z0-9]?)+'
+        rule: 'autoFocus|^(has|is|should|can)[A-Z]([A-Za-z0-9]?)+'
       }
     ],
     'react/display-name': 'error',
