@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.3.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/2.3.0) (2023-01-03)
+- Update config rules [\#45](https://github.com/uphold/eslint-config-uphold-react/pull/45) ([diogoquintas](https://github.com/diogoquintas))
+
 ## [2.2.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/2.2.0) (2022-12-23)
 - Bump moment from 2.29.2 to 2.29.4 [\#41](https://github.com/uphold/eslint-config-uphold-react/pull/41) ([dependabot](https://github.com/apps/dependabot))
 - Bump minimatch from 3.0.4 to 3.1.2 [\#42](https://github.com/uphold/eslint-config-uphold-react/pull/42) ([dependabot](https://github.com/apps/dependabot))
@@ -11,7 +14,6 @@
 - Bump node-fetch from 2.6.1 to 2.6.7 [\#33](https://github.com/uphold/eslint-config-uphold-react/pull/33) ([dependabot](https://github.com/apps/dependabot))
 - Bump moment from 2.29.1 to 2.29.2 [\#36](https://github.com/uphold/eslint-config-uphold-react/pull/36) ([dependabot](https://github.com/apps/dependabot))
 - Update 'react-hooks/exhaustive-deps' rule to warn [\#35](https://github.com/uphold/eslint-config-uphold-react/pull/35) ([NelsonBrandao](https://github.com/NelsonBrandao))
-Done in 2.51s.
 
 
 ## [v2.1.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v2.1.0) (2022-03-23)
