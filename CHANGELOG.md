@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.4.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/2.4.0) (2023-01-06)
+- Add jsx new line rule [\#47](https://github.com/uphold/eslint-config-uphold-react/pull/47) ([diogoquintas](https://github.com/diogoquintas))
+
 ## [2.3.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/2.3.0) (2023-01-03)
 - Update config rules [\#45](https://github.com/uphold/eslint-config-uphold-react/pull/45) ([diogoquintas](https://github.com/diogoquintas))
 
