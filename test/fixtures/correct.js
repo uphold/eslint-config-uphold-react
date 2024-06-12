@@ -18,9 +18,7 @@ noop(RulesOfHooks);
 
 // `react/prefer-stateless-function`.
 class PreferStatelessFunction extends React.Component {
-  getFoo = () => {
-    return 'foo';
-  };
+  getFoo = () => 'foo';
 
   render() {
     return this.getFoo();
