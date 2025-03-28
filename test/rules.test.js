@@ -5,8 +5,9 @@
  */
 
 const { ESLint } = require('eslint');
+const { describe, it } = require('node:test');
+const { join } = require('node:path');
 const baseConfig = require('../src');
-const path = require('path');
 
 const linter = new ESLint({ baseConfig });
 
@@ -15,14 +16,14 @@ const linter = new ESLint({ baseConfig });
  */
 
 describe('eslint-config-uphold-react', () => {
-  test('should not generate any violation for correct code', async () => {
-    const [result] = await linter.lintFiles([path.join(__dirname, 'fixtures', 'correct.js')]);
+  it('should not generate any violation for correct code', async test => {
+    const [result] = await linter.lintFiles([join(__dirname, 'fixtures', 'correct.js')]);
 
-    expect(result.errorCount).toEqual(0);
+    test.assert.equal(result.errorCount, 0);
   });
 
-  it('should generate violations for incorrect code', async () => {
-    const [result] = await linter.lintFiles([path.join(__dirname, 'fixtures', 'incorrect.js')]);
+  it('should generate violations for incorrect code', async test => {
+    const [result] = await linter.lintFiles([join(__dirname, 'fixtures', 'incorrect.js')]);
 
     const violations = result.messages.map(({ column, line, ruleId, severity }) => ({
       column,
@@ -31,6 +32,6 @@ describe('eslint-config-uphold-react', () => {
       severity
     }));
 
-    expect(violations).toMatchSnapshot();
+    test.assert.snapshot(violations);
   });
 });
