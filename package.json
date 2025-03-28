@@ -35,9 +35,9 @@
     "eslint-plugin-sort-class-members": "1.20.0"
   },
   "devDependencies": {
-    "@uphold/github-changelog-generator": "3.4.0",
+    "@fastify/pre-commit": "^2.2.0",
+    "@uphold/github-changelog-generator": "^4.0.2",
     "eslint": "~8.57.0",
-    "pre-commit": "1.2.2",
     "prettier": "~3.3.2",
     "react": "~18.2.0"
   },
