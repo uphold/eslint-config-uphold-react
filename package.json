@@ -19,10 +19,10 @@
   "scripts": {
     "changelog": "github-changelog-generator --future-release=v$npm_config_future_release > CHANGELOG.md",
     "lint": "eslint --config src/index.js src/index.js test/rules.test.js",
-    "unit-test": "jest",
-    "prepublishOnly": "yarn run test",
-    "preversion": "yarn run test",
-    "test": "yarn run lint && yarn run unit-test",
+    "test": "yarn run lint && yarn run test:unit",
+    "test:snapshot": "node --test --test-update-snapshots 'test/**/*.test.js'",
+    "test:unit": "node --test --experimental-test-coverage 'test/**/*.test.js'",
+    "test:watch": "node --test --watch 'test/**/*.test.js'",
     "version": "npm run changelog --future-release=$npm_package_version && git add -A CHANGELOG.md"
   },
   "dependencies": {
@@ -39,7 +39,6 @@
   "devDependencies": {
     "@uphold/github-changelog-generator": "3.4.0",
     "eslint": "~8.57.0",
-    "jest": "29.7.0",
     "pre-commit": "1.2.2",
     "prettier": "~3.3.2",
     "react": "~18.2.0"
@@ -51,6 +50,6 @@
     "eslint": "~8.57.0"
   },
   "engines": {
-    "node": ">=16"
+    "node": "^22.14.0 || >=23.4.0"
   }
 }

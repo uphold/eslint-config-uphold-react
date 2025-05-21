@@ -5,6 +5,17 @@ function noop() {
   // Do nothing
 }
 
+// `react-hooks/exhaustive-deps`.
+const useCallback = noop;
+
+function MyComponent(props) {
+  useCallback(() => {
+    noop(props.foo?.bar?.baz);
+  }, [props]);
+}
+
+noop(MyComponent);
+
 // `react-hooks/rules-of-hooks`.
 const useEffect = noop;
 
@@ -18,7 +29,7 @@ noop(RulesOfHooks);
 
 // `react/prefer-stateless-function`.
 class PreferStatelessFunction extends React.Component {
-  getFoo = () => 'foo';
+  getFoo = () => <div>Hello</div>;
 
   render() {
     return this.getFoo();
