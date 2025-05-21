@@ -10,7 +10,7 @@ module.exports = {
     mocha: true,
     node: true
   },
-  extends: ['uphold', 'plugin:react/recommended', 'prettier'],
+  extends: ['uphold', 'plugin:react/recommended', 'plugin:import-x/recommended', 'prettier'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     babelOptions: {
@@ -20,17 +20,14 @@ module.exports = {
       jsx: true
     }
   },
-  plugins: ['import', 'react', 'react-hooks', 'sort-class-members'],
+  plugins: ['import-x', 'react', 'react-hooks', 'sort-class-members'],
   root: true,
   rules: {
     'array-callback-return': 'off',
     'arrow-body-style': ['error', 'as-needed'],
-    'import/default': 'error',
-    'import/named': 'error',
-    'import/no-cycle': 'warn',
-    'import/no-duplicates': 'error',
-    'import/no-unresolved': 'error',
-    'import/no-useless-path-segments': ['error', { noUselessIndex: true }],
+    'import-x/no-cycle': 'warn',
+    'import-x/no-duplicates': 'error',
+    'import-x/no-useless-path-segments': ['error', { noUselessIndex: true }],
     'jsx-quotes': ['error', 'prefer-double'],
     'new-cap': ['error', { capIsNewExceptions: ['BigNumber'] }],
     'newline-after-var': 'off',
