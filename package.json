@@ -44,13 +44,14 @@
     "prettier": "~3.3.2",
     "react": "~18.2.0"
   },
-  "pre-commit": [
-    "test"
-  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "yarn@4.12.0",
   "peerDependencies": {
     "eslint": "~8.57.0"
   },
-  "engines": {
-    "node": ">=16"
-  }
+  "pre-commit": [
+    "test"
+  ]
 }
