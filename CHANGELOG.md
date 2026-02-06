@@ -1,5 +1,9 @@
 # Changelog
 
+## [v2.5.1](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v2.5.1) (2026-02-06)
+- Bump yarn to v4 [\#58](https://github.com/uphold/eslint-config-uphold-react/pull/58) ([xavi-999](https://github.com/xavi-999))
+
+
 ## [v2.5.0](https://github.com/uphold/eslint-config-uphold-react/releases/tag/v2.5.0) (2024-06-12)
 - Bump dependencies [\#54](https://github.com/uphold/eslint-config-uphold-react/pull/54) ([heberbranco](https://github.com/heberbranco))
 - Release 2.4.0 [\#48](https://github.com/uphold/eslint-config-uphold-react/pull/48) ([NelsonBrandao](https://github.com/NelsonBrandao))
