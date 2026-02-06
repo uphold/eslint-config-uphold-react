@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-uphold-react",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Uphold-flavored React ESLint config",
   "keywords": [
     "config",
